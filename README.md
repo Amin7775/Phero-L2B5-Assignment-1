@@ -7,13 +7,13 @@ Enums is also known as enumerations. In typeScript is provides a way to define a
 Without enums , we might find ourselves using plain strings or numbers.
 
 example : 
-
+```
 function setRole(role : string){
     if(role === "admin"){
         ...
     }
 }
-
+```
 
 But this is error prone . why ? 
 
@@ -26,7 +26,7 @@ Enums on the other hand have prefixed values. So , at the compile time it wont c
 Numeric enums are default in TS and they auto increment starting from 0 . 
 
 example : 
-
+```
 enum Direction {
     Up,
     Down , 
@@ -39,14 +39,14 @@ console.log(res1)  // Output : 0
 
 const res2 = Direction.Down;
 console.log(res2)  // Output : 1
-
+```
 
 ### String Enums
 
 String enums are basically string literals assigned to each member. They are useful for meaningful value like roles , responses , logs etc. 
 
 example : 
-
+```
 enum UserRole {
     Admin = "ADMIN"
     user = "USER"
@@ -59,6 +59,7 @@ function checkAdminAccess(role: UserRole){
 }
 
 checkAdminAccess(UserRole.Admin)
+```
 ---------------------------------------------------
 
 # How does TypeScript help in improving code quality and project maintainability?
